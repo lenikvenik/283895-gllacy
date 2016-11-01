@@ -95,180 +95,187 @@
 							<div class="filter-label">
 								Сортировка:
 							</div>
-							<select name="sort">
-								<option value="popular">Популярные</option>
-								<option value="price-asc">Сначала недорогие</option>
-								<option value="price-desc">Сначала дорогие</option>
-								<option value="fatcontent">По жирности</option>
-							</select>
+							<div class="filter-items">
+								<select name="sort">
+									<option value="popular">Популярные</option>
+									<option value="price-asc">Сначала недорогие</option>
+									<option value="price-desc">Сначала дорогие</option>
+									<option value="fatcontent">По жирности</option>
+								</select>
+							</div>
 						</div>
 						<div class="filter-block">
 							<div class="filter-label">
 								Цена:
 							</div>
 							<!-- Как реализовать - пока непонятно:) -->
-							от <input type="text" name="price-from">
-							до <input type="text" name="price-to">
+							<div class="filter-items">
+								от <input type="text" name="price-from">
+								до <input type="text" name="price-to">
+							</div>
 						</div>
 						<div class="filter-block">
 							<div class="filter-label">
 								Жирность:
 							</div>
-							<label> 
-								<input type="radio" name="fatcontent" value="0"> 0%
-							</label>
-							<label>
-								<input type="radio" name="fatcontent" value="10" checked> до 10%
-							</label>
-							<label> 
-								<input type="radio" name="fatcontent" value="30"> До 30%
-							</label>
-							<label> 
-								<input type="radio" name="fatcontent" value="30+"> Выше 30%
-							</label>
+							<div class="filter-items">
+								<label> 
+									<input type="radio" name="fatcontent" value="0"> 0%
+								</label>
+								<label>
+									<input type="radio" name="fatcontent" value="10" checked> до 10%
+								</label>
+								<label> 
+									<input type="radio" name="fatcontent" value="30"> До 30%
+								</label>
+								<label> 
+									<input type="radio" name="fatcontent" value="30+"> Выше 30%
+								</label>
+							</div>
 						</div>
 						<div class="filter-block">
 							<div class="filter-label">
 								Наполнители:
 							</div>
-							<label> 
-								<input type="checkbox" name="chocolate"> шоколадные
-							</label>
-							<label>
-								<input type="checkbox" name="sugar" checked> сахарные присыпки
-							</label>
-							<label> 
-								<input type="checkbox" name="fruits"> фрукты
-							</label>
-							<label> 
-								<input type="checkbox" name="syrup"> сиропы
-							</label>
-							<label> 
-								<input type="checkbox" name="jam"> джемы
-							</label>
-							<input type="submit" value="Применить" class="btn btn_outline">
-
+							<div class="filter-items">
+								<label> 
+									<input type="checkbox" name="chocolate"> шоколадные
+								</label>
+								<label>
+									<input type="checkbox" name="sugar" checked> сахарные присыпки
+								</label>
+								<label> 
+									<input type="checkbox" name="fruits"> фрукты
+								</label>
+								<label> 
+									<input type="checkbox" name="syrup"> сиропы
+								</label>
+								<label> 
+									<input type="checkbox" name="jam"> джемы
+								</label>
+								<input type="submit" value="Применить" class="btn btn_outline">
+							</div>
 						</div>
 					</form>
 				</div>
 				<div class="catalog">
 					<div class="catalog-item">
-						<a href="#">
+						<a href="#" class="catalog-image-link">
 							<img class="catalog-image" src="img/product_1.png">
-						</a>
-						<a href="#">
-							<p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
 							<span class="catalog-price">310p/<span class="catalog-measure">кг</span></span>
+						</a>
+						<a href="#" class="catalog-name">
+							Сливочное с апельсиновым джемом и цитрусовой стружкой
 						</a>
 						<a href="#" class="catalog-preview btn">Быстрый просмотр</a>
 					</div>
 					<div class="catalog-item">
-						<a href="#">
+						<a href="#" class="catalog-image-link">
 							<img class="catalog-image" src="img/product_2.png">
-						</a>
-						<a href="#">
-							<p>Сливочное-кофейное с кусочками шоколада</p>
 							<span class="catalog-price">310p/<span class="catalog-measure">кг</span></span>
+						</a>
+						<a href="#" class="catalog-name">
+							Сливочное-кофейное с кусочками шоколада
 						</a>
 						<a href="#" class="catalog-preview btn">Быстрый просмотр</a>
 					</div>
 					<div class="catalog-item">
-						<a href="#">
+						<a href="#" class="catalog-image-link">
 							<img class="catalog-image" src="img/product_3.png">
-						</a>
-						<a href="#">
-							<p>Сливочно-клубничное с присыпкой из белого шоколада</p>
 							<span class="catalog-price">310p/<span class="catalog-measure">кг</span></span>
+						</a>
+						<a href="#" class="catalog-name">
+							Сливочно-клубничное с присыпкой из белого шоколада
 						</a>
 						<a href="#" class="catalog-preview btn">Быстрый просмотр</a>
 					</div>
 					<div class="catalog-item">
-						<a href="#">
+						<a href="#" class="catalog-image-link">
 							<img class="catalog-image" src="img/product_4.png">
-						</a>
-						<a href="#">
-							<p>Сливочное крем-брюле с карамельной подливкой</p>
 							<span class="catalog-price">310p/<span class="catalog-measure">кг</span></span>
+						</a>
+						<a href="#" class="catalog-name">
+							Сливочное крем-брюле с карамельной подливкой
 						</a>
 						<a href="#" class="catalog-preview btn">Быстрый просмотр</a>
 					</div>
 					<div class="catalog-item">
-						<a href="#">
+						<a href="#" class="catalog-image-link">
 							<img class="catalog-image" src="img/product_5.png">
-						</a>
-						<a href="#">
-							<p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
 							<span class="catalog-price">310p/<span class="catalog-measure">кг</span></span>
+						</a>
+						<a href="#" class="catalog-name">
+							Сливочное с апельсиновым джемом и цитрусовой стружкой
 						</a>
 						<a href="#" class="catalog-preview btn">Быстрый просмотр</a>
 					</div>
 					<div class="catalog-item">
-						<a href="#">
+						<a href="#" class="catalog-image-link">
 							<img class="catalog-image" src="img/product_6.png">
-						</a>
-						<a href="#">
-							<p>Сливочное-кофейное с кусочками шоколада</p>
 							<span class="catalog-price">310p/<span class="catalog-measure">кг</span></span>
+						</a>
+						<a href="#" class="catalog-name">
+							Сливочное-кофейное с кусочками шоколада
 						</a>
 						<a href="#" class="catalog-preview btn">Быстрый просмотр</a>
 					</div>
 					<div class="catalog-item">
-						<a href="#">
+						<a href="#" class="catalog-image-link">
 							<img class="catalog-image" src="img/product_7.png">
-						</a>
-						<a href="#">
-							<p>Сливочно-клубничное с присыпкой из белого шоколада</p>
 							<span class="catalog-price">310p/<span class="catalog-measure">кг</span></span>
+						</a>
+						<a href="#" class="catalog-name">
+							Сливочно-клубничное с присыпкой из белого шоколада
 						</a>
 						<a href="#" class="catalog-preview btn">Быстрый просмотр</a>
 					</div>
 					<div class="catalog-item">
-						<a href="#">
+						<a href="#" class="catalog-image-link">
 							<img class="catalog-image" src="img/product_8.png">
-						</a>
-						<a href="#">
-							<p>Сливочное крем-брюле с карамельной подливкой</p>
 							<span class="catalog-price">310p/<span class="catalog-measure">кг</span></span>
+						</a>
+						<a href="#" class="catalog-name">
+							Сливочное крем-брюле с карамельной подливкой
 						</a>
 						<a href="#" class="catalog-preview btn">Быстрый просмотр</a>
 					</div>
 					<div class="catalog-item">
-						<a href="#">
+						<a href="#" class="catalog-image-link">
 							<img class="catalog-image" src="img/product_9.png">
-						</a>
-						<a href="#">
-							<p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
 							<span class="catalog-price">310p/<span class="catalog-measure">кг</span></span>
+						</a>
+						<a href="#" class="catalog-name">
+							Сливочное с апельсиновым джемом и цитрусовой стружкой
 						</a>
 						<a href="#" class="catalog-preview btn">Быстрый просмотр</a>
 					</div>
 					<div class="catalog-item">
-						<a href="#">
+						<a href="#" class="catalog-image-link">
 							<img class="catalog-image" src="img/product_10.png">
-						</a>
-						<a href="#">
-							<p>Сливочное-кофейное с кусочками шоколада</p>
 							<span class="catalog-price">310p/<span class="catalog-measure">кг</span></span>
+						</a>
+						<a href="#" class="catalog-name">
+							Сливочное-кофейное с кусочками шоколада
 						</a>
 						<a href="#" class="catalog-preview btn">Быстрый просмотр</a>
 					</div>
 					<div class="catalog-item">
-						<a href="#">
+						<a href="#" class="catalog-image-link">
 							<img class="catalog-image" src="img/product_11.png">
-						</a>
-						<a href="#">
-							<p>Сливочно-клубничное с присыпкой из белого шоколада</p>
 							<span class="catalog-price">310p/<span class="catalog-measure">кг</span></span>
+						</a>
+						<a href="#" class="catalog-name">
+							Сливочно-клубничное с присыпкой из белого шоколада
 						</a>
 						<a href="#" class="catalog-preview btn">Быстрый просмотр</a>
 					</div>
 					<div class="catalog-item">
-						<a href="#">
+						<a href="#" class="catalog-image-link">
 							<img class="catalog-image" src="img/product_12.png">
-						</a>
-						<a href="#">
-							<p>Сливочное крем-брюле с карамельной подливкой</p>
 							<span class="catalog-price">310p/<span class="catalog-measure">кг</span></span>
+						</a>
+						<a href="#" class="catalog-name">
+							Сливочное крем-брюле с карамельной подливкой
 						</a>
 						<a href="#" class="catalog-preview btn">Быстрый просмотр</a>
 					</div>
