@@ -4,6 +4,8 @@ body {
 	line-height: 22px;
 	color: #323232;
 	font-weight: normal;
+	background-color: #849d8f;
+	margin: 0;
 }
 
 h1 {
@@ -21,3 +23,277 @@ h2 {
 	color: #323232;
 	font-weight: bold;
 }
+
+.clearfix::after {
+  content: "";
+
+  display: table;
+  clear: both;
+}
+
+.container {
+	width: 1146px;
+	margin: 0 auto;
+}
+
+.main-header {
+	outline: 2px solid white;
+}
+
+.logo {
+	float:left;
+	width: 155px;
+	margin-right: 30px;
+	outline: 2px solid white;
+	background-color: #c9efda;
+}
+
+.main-navigation {
+	float: left;
+	width: 350px;
+	outline: 2px solid white;
+	background-color: #c9efda;
+}
+
+.main-navigation ul {
+	padding: 0;
+	list-style: none;
+}
+
+.main-navigation li {
+	float:left;
+	margin-right: 15px;
+}
+
+.user {
+	float: right;
+	width: 260px;
+	outline: 2px solid white;
+	background-color: #c9efda;
+
+}
+
+.header-contacts {
+	float: right;
+	width: 260px;
+	clear: both;
+	outline: 2px solid white;
+	background-color: #c9efda;
+}
+
+.dropdown-block {
+	display: none;
+}
+
+.slider {
+	outline: 2px solid white;
+	background-color: #e3b4cb;
+}
+
+.slide {
+	text-align: center;
+	position: relative;
+	height: 520px;
+}
+
+.slide .title {
+	position: absolute;
+	bottom: 100px;
+	left: 0;
+	right: 0;
+}
+
+.slide .btn {
+	position: absolute;
+	bottom: 20px;
+	left: 0;
+	right: 0;
+}
+
+
+.slide + .slide {
+	display:none;
+}
+
+
+.banners {
+	position: relative;
+	outline: 2px solid white;
+	background-color: #fdfbc2;
+	margin-bottom: 40px;
+}
+
+
+.banner {
+	float: left;
+	width: 560px;
+	height: 230px;
+	outline: 2px solid white;
+	background-color: #f1ed83;
+}
+
+
+.banner:first-child {
+	margin-right: 26px;
+}
+
+
+.catalog {
+	outline: 2px solid white;
+	background-color: #ffada1;
+	margin-bottom: 40px;
+}
+
+
+.catalog-item {
+	float: left;
+	width: 267px;
+	margin-right: 26px; 
+	margin-bottom: 40px;
+	outline: 2px solid white;
+	background-color: #ff7e6c;
+}
+
+
+.catalog-item:nth-child(4n) {
+    margin-right: 0;
+}
+
+
+.about-us-text {
+	padding: 30px 22px;
+	background-color:#f8e7d0;
+	outline: 2px solid white;
+	margin-bottom: 40px;
+}
+
+
+.about-us-item {
+	float: left;
+	width: 530px;
+	margin-right: 26px;
+	background-color:#ffd599;
+	outline: 2px solid white;
+}
+
+
+.about-us-item:nth-child(2n+1) {
+    margin-right: 0;
+}
+
+
+.blog-and-subscribe {
+	outline: 2px solid white;
+	background-color: #aacbd9;
+	margin-bottom: 40px;
+}
+
+
+.blog {
+	float:left;
+	height: 220px;
+	width: 560px;
+	margin-right: 26px;
+	outline: 2px solid white;
+	background-color: #91c6dc;
+}
+
+
+.subscribe {
+	float:left;
+	height: 220px;
+	width: 560px;
+	outline: 2px solid white;
+	background-color: #91c6dc;
+}
+
+
+.map {
+	padding: 64px;
+	outline: 2px solid white;
+	background-color: #d6d6dc;
+}
+
+.adress {
+	float: right;
+	width: 300px;
+	height: 305px;
+	background-color: white;
+
+}
+
+.main-footer {
+	height: 105px;
+	outline: 2px solid white;
+	background-color: #c9efda
+}
+
+.footer-social {
+	float: left;
+	width: 265px;
+	margin-right: 100px;
+	background-color: #9cd6b6;
+	outline: 2px solid white;
+}
+
+
+.footer-about-us {
+	float: left;
+	width: 400px;
+	background-color: #9cd6b6;
+	outline: 2px solid white;
+
+}
+
+.footer-about-us ul {
+	display: inline-block;
+	vertical-align: top;
+	padding: 0;
+	margin-right: 30px;
+	list-style: none;
+}
+
+
+.footer-copyright {
+	float: right;
+	width: 265px;
+	background-color: #9cd6b6;
+	outline: 2px solid white;
+}
+
+
+.breadcrumbs {
+	list-style: none;
+	padding: 0;
+	background-color: #babfeb;
+	outline: 2px solid white;
+
+}
+
+.breadcrumbs li {
+	display: inline-block;
+}
+
+
+.filter {
+	background-color: #f8e7d0;
+	outline: 2px solid white;
+	margin-bottom: 25px;
+}
+
+.filter-block {
+	display: inline-block;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	background-color: #ffd599;
+	outline: 2px solid white;
+}
+
+.paginator {
+	float: right;
+	outline: 2px solid white;
+	background-color: #f8e7d0;
+	margin-bottom: 30px;
+}
+
+

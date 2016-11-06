@@ -7,14 +7,31 @@
 	</head>
 	<body>
 		<div class="container">
-			<header class="main-header">
+			<header class="main-header clearfix">
 				<div class="logo">
-					<img src="img/logo.svg">
+					<a href="index.html"><img src="img/logo.svg" alt=""></a>
 				</div>
 				<nav class="main-navigation">
 					<ul>
-						<li>
-							<a href="#">Каталог</a>
+						<li class="dropdown">
+							<a href="catalog.html">Каталог</a>
+							<div class="dropdown-block">
+								<ul>
+									<li class="title">Новинки</li>
+									<li>
+										<a href="#">Сливочное</a>
+									</li>
+									<li>
+										<a href="#">Щербеты</a>
+									</li>
+									<li>
+										<a href="#">Фруктовый лед</a>
+									</li>
+									<li>
+										<a href="#">Мелорин</a>
+									</li>
+								</ul>
+							</div>
 						</li>
 						<li>
 							<a href="#">Доставка и оплата</a>
@@ -49,31 +66,9 @@
 					</div>
 					<div class="user-block dropdown">
 						<a href="#" class="user-link user-link_cart">Пусто</a>
-						<div class="dropdown-block">
-							<div class="cart">
-								<div class="cart-item">
-									<a href="#" class="cart-item__remove"></a>
-									<a href="#">
-										<div class="cart-item__image"><img src="product_in_cart1.png"></div>
-										<div class="cart-item__title">Пломбир с апельсиновым джемом</div>
-									</a>
-									<div class="cart-item__weight">1,5 кг х 200 руб.</div>
-									<div class="cart-item__price">300 руб.</div>
-								</div>
-								<div class="cart-item">
-									<a href="#" class="cart-item__remove"></a>
-									<a href="#">
-										<div class="cart-item__image"><img src="product_in_cart2.png"></div>
-										<div class="cart-item__title">Пломбир с апельсиновым джемом</div>
-									</a>
-									<div class="cart-item__weight">1,5 кг х 200 руб.</div>
-									<div class="cart-item__price">300 руб.</div>
-								</div>
-								<hr>
-								<div class="total">Итого: 750 руб</div>
-								<a href="#" class="btn">Оформить заказ</a>
-							</div>
-						</div>
+						<!-- <div class="dropdown-block">
+							<div></div>
+						</div> -->
 					</div>
 				</div>
 				<div class="header-contacts">
@@ -84,7 +79,7 @@
 
 			<div class="main-content">
 				<ul class="breadcrumbs">
-					<li><a href="#">Главная</a></li>
+					<li><a href="index.html">Главная</a></li>
 					<li><a href="#">Каталог</a></li>
 					<li>Сливочное</li>
 				</ul>
@@ -153,15 +148,17 @@
 								<label> 
 									<input type="checkbox" name="jam"> джемы
 								</label>
-								<input type="submit" value="Применить" class="btn btn_outline">
 							</div>
+						</div>
+						<div class="filter-block">
+							<input type="submit" value="Применить" class="btn btn_outline">
 						</div>
 					</form>
 				</div>
-				<div class="catalog">
+				<div class="catalog clearfix">
 					<div class="catalog-item">
-						<a href="#" class="catalog-image-link">
-							<img class="catalog-image" src="img/product_1.png">
+						<a href="#" class="catalog-image">
+							<img src="img/product_1.png" alt="">
 							<span class="catalog-price">310p/<span class="catalog-measure">кг</span></span>
 						</a>
 						<a href="#" class="catalog-name">
@@ -170,8 +167,8 @@
 						<a href="#" class="catalog-preview btn">Быстрый просмотр</a>
 					</div>
 					<div class="catalog-item">
-						<a href="#" class="catalog-image-link">
-							<img class="catalog-image" src="img/product_2.png">
+						<a href="#" class="catalog-image">
+							<img src="img/product_2.png" alt="">
 							<span class="catalog-price">310p/<span class="catalog-measure">кг</span></span>
 						</a>
 						<a href="#" class="catalog-name">
@@ -180,8 +177,8 @@
 						<a href="#" class="catalog-preview btn">Быстрый просмотр</a>
 					</div>
 					<div class="catalog-item">
-						<a href="#" class="catalog-image-link">
-							<img class="catalog-image" src="img/product_3.png">
+						<a href="#" class="catalog-image">
+							<img src="img/product_3.png" alt="">
 							<span class="catalog-price">310p/<span class="catalog-measure">кг</span></span>
 						</a>
 						<a href="#" class="catalog-name">
@@ -190,8 +187,8 @@
 						<a href="#" class="catalog-preview btn">Быстрый просмотр</a>
 					</div>
 					<div class="catalog-item">
-						<a href="#" class="catalog-image-link">
-							<img class="catalog-image" src="img/product_4.png">
+						<a href="#" class="catalog-image">
+							<img src="img/product_4.png" alt="">
 							<span class="catalog-price">310p/<span class="catalog-measure">кг</span></span>
 						</a>
 						<a href="#" class="catalog-name">
@@ -200,8 +197,8 @@
 						<a href="#" class="catalog-preview btn">Быстрый просмотр</a>
 					</div>
 					<div class="catalog-item">
-						<a href="#" class="catalog-image-link">
-							<img class="catalog-image" src="img/product_5.png">
+						<a href="#" class="catalog-image">
+							<img src="img/product_5.png" alt="">
 							<span class="catalog-price">310p/<span class="catalog-measure">кг</span></span>
 						</a>
 						<a href="#" class="catalog-name">
@@ -210,8 +207,8 @@
 						<a href="#" class="catalog-preview btn">Быстрый просмотр</a>
 					</div>
 					<div class="catalog-item">
-						<a href="#" class="catalog-image-link">
-							<img class="catalog-image" src="img/product_6.png">
+						<a href="#" class="catalog-image">
+							<img src="img/product_6.png" alt="">
 							<span class="catalog-price">310p/<span class="catalog-measure">кг</span></span>
 						</a>
 						<a href="#" class="catalog-name">
@@ -220,8 +217,8 @@
 						<a href="#" class="catalog-preview btn">Быстрый просмотр</a>
 					</div>
 					<div class="catalog-item">
-						<a href="#" class="catalog-image-link">
-							<img class="catalog-image" src="img/product_7.png">
+						<a href="#" class="catalog-image">
+							<img src="img/product_7.png" alt="">
 							<span class="catalog-price">310p/<span class="catalog-measure">кг</span></span>
 						</a>
 						<a href="#" class="catalog-name">
@@ -230,8 +227,8 @@
 						<a href="#" class="catalog-preview btn">Быстрый просмотр</a>
 					</div>
 					<div class="catalog-item">
-						<a href="#" class="catalog-image-link">
-							<img class="catalog-image" src="img/product_8.png">
+						<a href="#" class="catalog-image">
+							<img src="img/product_8.png" alt="">
 							<span class="catalog-price">310p/<span class="catalog-measure">кг</span></span>
 						</a>
 						<a href="#" class="catalog-name">
@@ -240,8 +237,8 @@
 						<a href="#" class="catalog-preview btn">Быстрый просмотр</a>
 					</div>
 					<div class="catalog-item">
-						<a href="#" class="catalog-image-link">
-							<img class="catalog-image" src="img/product_9.png">
+						<a href="#" class="catalog-image">
+							<img src="img/product_9.png" alt="">
 							<span class="catalog-price">310p/<span class="catalog-measure">кг</span></span>
 						</a>
 						<a href="#" class="catalog-name">
@@ -250,8 +247,8 @@
 						<a href="#" class="catalog-preview btn">Быстрый просмотр</a>
 					</div>
 					<div class="catalog-item">
-						<a href="#" class="catalog-image-link">
-							<img class="catalog-image" src="img/product_10.png">
+						<a href="#" class="catalog-image">
+							<img src="img/product_10.png" alt="">
 							<span class="catalog-price">310p/<span class="catalog-measure">кг</span></span>
 						</a>
 						<a href="#" class="catalog-name">
@@ -260,8 +257,8 @@
 						<a href="#" class="catalog-preview btn">Быстрый просмотр</a>
 					</div>
 					<div class="catalog-item">
-						<a href="#" class="catalog-image-link">
-							<img class="catalog-image" src="img/product_11.png">
+						<a href="#" class="catalog-image">
+							<img src="img/product_11.png" alt="">
 							<span class="catalog-price">310p/<span class="catalog-measure">кг</span></span>
 						</a>
 						<a href="#" class="catalog-name">
@@ -270,8 +267,8 @@
 						<a href="#" class="catalog-preview btn">Быстрый просмотр</a>
 					</div>
 					<div class="catalog-item">
-						<a href="#" class="catalog-image-link">
-							<img class="catalog-image" src="img/product_12.png">
+						<a href="#" class="catalog-image">
+							<img src="img/product_12.png" alt="">
 							<span class="catalog-price">310p/<span class="catalog-measure">кг</span></span>
 						</a>
 						<a href="#" class="catalog-name">
@@ -281,14 +278,15 @@
 					</div>
 				</div>
 				<div class="paginator">
-					<a href="#" class="prev"><</a>
+					<a href="#" class="prev">&lt;</a>
 					<a href="#" class="active">1</a>
 					<a href="#">2</a>
 					<a href="#">3</a>
 					<a href="#">4</a>
 					<a href="#">5</a>
-					<a href="#" class="next">></a>
+					<a href="#" class="next">&gt;</a>
 				</div>
+				<div class="clearfix"></div>
 			 </div>
 
 			
@@ -315,7 +313,7 @@
 				</div>
 				<div class="footer-copyright">
 					<a class="footer-logo" href="#">
-					<img src="img/logo_htmlacademy.png">
+					<img src="img/logo_htmlacademy.png" alt="">
 					</a>
 					Сделано в <a class="footer-link-htmlacademy" href="#">HTML Academy</a> 2016
 				</div>
