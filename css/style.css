@@ -8,6 +8,7 @@ body {
 	margin: 0;
 }
 
+
 h1 {
 	font-family: "roboto","Arial",Sans-serif;
 	font-size: 35px;
@@ -15,6 +16,7 @@ h1 {
 	color: #ffffff;
 	font-weight: bold;
 }
+
 
 h2 {
 	font-family: "roboto","Arial",Sans-serif;
@@ -24,6 +26,7 @@ h2 {
 	font-weight: bold;
 }
 
+
 .clearfix::after {
   content: "";
 
@@ -31,14 +34,19 @@ h2 {
   clear: both;
 }
 
+
 .container {
 	width: 1146px;
 	margin: 0 auto;
+	padding: 0 27px;
 }
+
 
 .main-header {
 	outline: 2px solid white;
+	position: relative;
 }
+
 
 .logo {
 	float:left;
@@ -48,6 +56,7 @@ h2 {
 	background-color: #c9efda;
 }
 
+
 .main-navigation {
 	float: left;
 	width: 350px;
@@ -55,15 +64,18 @@ h2 {
 	background-color: #c9efda;
 }
 
+
 .main-navigation ul {
 	padding: 0;
 	list-style: none;
 }
 
+
 .main-navigation li {
 	float:left;
 	margin-right: 15px;
 }
+
 
 .user {
 	float: right;
@@ -73,46 +85,46 @@ h2 {
 
 }
 
+
 .header-contacts {
-	float: right;
+	position: absolute;
+	right: 0;
+	bottom: -100%;
 	width: 260px;
-	clear: both;
 	outline: 2px solid white;
 	background-color: #c9efda;
 }
 
+
 .dropdown-block {
 	display: none;
 }
+
 
 .slider {
 	outline: 2px solid white;
 	background-color: #e3b4cb;
 }
 
+
 .slide {
 	text-align: center;
 	position: relative;
 	height: 520px;
+	display: none;
 }
 
-.slide .title {
+
+.slide.active {
+	display: block;
+}
+
+
+.slide-info {
 	position: absolute;
-	bottom: 100px;
+	bottom: 40px;
 	left: 0;
 	right: 0;
-}
-
-.slide .btn {
-	position: absolute;
-	bottom: 20px;
-	left: 0;
-	right: 0;
-}
-
-
-.slide + .slide {
-	display:none;
 }
 
 
@@ -127,7 +139,6 @@ h2 {
 .banner {
 	float: left;
 	width: 560px;
-	height: 230px;
 	outline: 2px solid white;
 	background-color: #f1ed83;
 }
@@ -170,14 +181,15 @@ h2 {
 
 .about-us-item {
 	float: left;
-	width: 530px;
+	width: 472px;
+	padding-left: 58px;
 	margin-right: 26px;
 	background-color:#ffd599;
 	outline: 2px solid white;
 }
 
 
-.about-us-item:nth-child(2n+1) {
+.about-us-item:nth-child(2n) {
     margin-right: 0;
 }
 
@@ -191,7 +203,6 @@ h2 {
 
 .blog {
 	float:left;
-	height: 220px;
 	width: 560px;
 	margin-right: 26px;
 	outline: 2px solid white;
@@ -209,7 +220,6 @@ h2 {
 
 
 .map {
-	padding: 64px;
 	outline: 2px solid white;
 	background-color: #d6d6dc;
 }
@@ -223,7 +233,6 @@ h2 {
 }
 
 .main-footer {
-	height: 105px;
 	outline: 2px solid white;
 	background-color: #c9efda
 }
@@ -272,6 +281,7 @@ h2 {
 
 .breadcrumbs li {
 	display: inline-block;
+	vertical-align: top;
 }
 
 
@@ -283,6 +293,7 @@ h2 {
 
 .filter-block {
 	display: inline-block;
+	vertical-align: top;
 	margin-right: 15px;
 	margin-bottom: 15px;
 	background-color: #ffd599;
