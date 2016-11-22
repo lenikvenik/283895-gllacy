@@ -160,8 +160,9 @@ a.invert:hover {
 
 
 .main-navigation__item {
-	float:left;
+	float: left;
 	color: #fff;
+	white-space: nowrap;
 }
 
 .main-navigation a {
@@ -173,7 +174,7 @@ a.invert:hover {
 }
 
 
-.main-navigation a:hover {
+.main-navigation__item:hover a {
 	background-color: #f7f6f3;
 	color: #333333;
 	text-decoration: none;
@@ -1057,6 +1058,14 @@ select:focus {
 	border-radius: 50%;
 }
 
+input[disabled] + .radio-indicator, input[disabled] + .checkbox-indicator {
+	opacity: 0.4;
+	cursor: default;
+}
+input[disabled] + .radio-indicator:hover, input[disabled] + .checkbox-indicator:hover {
+	box-shadow: none;
+}
+
 .radio-indicator:hover {
 	box-shadow: 0 0 0 1px #fff;
 }
@@ -1142,25 +1151,22 @@ select:focus {
 .filter-btn {
 	background: #9cb0a4;
 	margin-top: 25px;
-	padding: 7px 27px;
-	border: 2px solid #fff;
+	padding: 8px 28px;
+	border: none;
 	border-radius: 50px;
 	color: #fff;
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: 700;
 	cursor: pointer;
+	box-shadow: inset 0 0 0 2px #fff;
 }
 .filter-btn:hover {
-	border: none;
-	padding: 8px 28px;
 	background: #fbfcfb;
 	color: #323232;
 }
 .filter-btn:focus {
 	background: #eaeaea;
-	padding: 8px 28px;
-	border: none;
 	color: #323232;
 	outline: none;
 	box-shadow: inset 0 2px 1px #696969;
@@ -1309,15 +1315,15 @@ label[for="btn-3"]:hover {
 	width: 480px;
 	display: none;
 	background: #f8f7f4;
-	border-radius: 5px;
-	padding: 20px;
+	border-radius: 10px;
+	padding: 15px 20px 20px;
 	z-index: 20;
 	box-sizing: border-box
 }
 .modal-form-close {
 	position: absolute;
-	top: 20px;
-	right: 15px;
+	top: 13px;
+	right: 14px;
 	width: 20px;
 	height: 20px;
 	font-size: 0;
@@ -1331,8 +1337,8 @@ label[for="btn-3"]:hover {
 	position: absolute;
 	top: 10px;
 	left: 0;
-	width: 10px;
-	height: 1px;
+	width: 20px;
+	height: 2px;
 	background-color: #000
 }
 .modal-form-close::before {
