@@ -1141,7 +1141,7 @@ input[disabled] + .radio-indicator:hover, input[disabled] + .checkbox-indicator:
   box-shadow: none;
 }
 
-.radio-indicator:before:hover {
+.radio-indicator:hover:before {
   box-shadow: 0 0 0 1px #fff;
 }
 
@@ -1169,7 +1169,7 @@ input[disabled] + .radio-indicator:hover, input[disabled] + .checkbox-indicator:
   background-repeat: no-repeat;
 }
 
-.checkbox-indicator:before:hover {
+.checkbox-indicator:hover:before {
   box-shadow: 0 0 0 1px #fff;
 }
 
