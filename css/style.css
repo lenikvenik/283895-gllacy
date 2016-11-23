@@ -86,7 +86,6 @@ a.invert:hover {
 	pointer-events: none;
 	left: 14px;
 	top: 10px;
-	-moz-transition: .2s ease all;
 	-webkit-transition: .2s ease all;
 	transition: .2s ease all;
 }
@@ -1243,6 +1242,7 @@ input[disabled] + .radio-indicator:hover, input[disabled] + .checkbox-indicator:
 	vertical-align: middle;
 	text-decoration: none;
 	background-color: #ed5a3d;
+	background-image: -webkit-linear-gradient(top,#f26843 0%,#e74a35 100%);
 	background-image: linear-gradient(to bottom,#f26843 0%,#e74a35 100%);
 	box-shadow: 0 2px 2px 0 rgba(172,16,0,0.64);
 	outline: none;
