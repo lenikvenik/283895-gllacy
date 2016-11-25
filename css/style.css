@@ -376,16 +376,15 @@ a.invert:hover {
 .cart {
   right: 0;
   width: 540px;
-  padding: 20px 15px;
+  padding: 20px 15px 21px;
 }
 
-.cart {
-}
+.cart {padding-top: 12px;}
 
 .cart-item {
   position: relative;
   padding-left: 20px;
-  margin-bottom: 3px;
+  margin-bottom: 5px;
 }
 
 .cart-item__remove {
@@ -406,7 +405,7 @@ a.invert:hover {
   content: '';
   position: absolute;
   top: 50%;
-  margin-top: -3px;
+  margin-top: -2px;
   left: 0;
   width: 14px;
   height: 1px;
@@ -463,13 +462,13 @@ a.invert:hover {
 }
 
 .cart-total {
-  margin-bottom: 15px;
+  margin-bottom: 14px;
   font-size: 15px;
   line-height: 18px;
   font-weight: 700;
   text-align: right;
   border-top: 1px solid #cacac7;
-  margin-top: 15px;
+  margin-top: 14px;
   padding-top: 15px;
 }
 
@@ -1326,6 +1325,7 @@ input[disabled] + .radio-indicator:hover, input[disabled] + .checkbox-indicator:
   border: none;
   border-radius: 40px;
   color: #fff;
+  font-family: "roboto","Arial",Sans-serif;
   font-size: 18px;
   font-weight: 500;
   padding: 11px 22px;
@@ -1409,12 +1409,12 @@ label[for="btn-3"]:hover {
   position: fixed;
   top: 25%;
   left: 50%;
-  margin-left: -240px;
-  width: 480px;
+  margin-left: -239px;
+  width: 477px;
   display: none;
   background: #f8f7f4;
   border-radius: 10px;
-  padding: 15px 20px 20px;
+  padding: 15px 24px 9px;
   z-index: 20;
   box-sizing: border-box;
 }
@@ -1454,7 +1454,7 @@ label[for="btn-3"]:hover {
 
 .modal-form-name {
   margin-top: 0;
-  margin-bottom: 25px;
+  margin-bottom: 18px;
 }
 
 .modal-form-contact input {
@@ -1485,12 +1485,12 @@ label[for="btn-3"]:hover {
   display: block;
 }
 
-.user-mail-field, .user-name-field {
-  width: 265px;
+.modal-form .user-mail-field, .modal-form .user-name-field {
+  width: 267px;
 }
 
 .user-text-field {
   width: 425px;
-  height: 150px;
+  height: 155px;
   margin-bottom: 25px;
 }
