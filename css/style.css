@@ -282,7 +282,7 @@ a.invert:hover {
   padding-right: 34px;
 }
 .user-link_cart.full {
-  padding-right: 0;
+   padding-right: 16px;
 }
 
 .user-link:before {
@@ -599,7 +599,7 @@ a.invert:hover {
   float: left;
   width: 267px;
   margin-right: 26px;
-  margin-bottom: 19px;
+  margin-bottom: 25px;
 }
 
 .catalog-item:nth-child(4n) {
@@ -661,7 +661,7 @@ a.invert:hover {
   position: relative;
   display: inline-block;
   color: #fff;
-  margin-bottom: 19px;
+  margin-bottom: 13px;
   text-align: center;
   vertical-align: middle;
   z-index: 10;
@@ -681,14 +681,17 @@ a.invert:hover {
   text-align: center;
   z-index: 10;
 }
+.catalog-preview .btn {
+	padding: 11px 18px;
+}
 
 .catalog-fake-hover {
   display: none;
   position: absolute;
-  top: -5px;
+  top: -6px;
   left: -13px;
   right: -13px;
-  bottom: -57px;
+  bottom: -62px;
   border-radius: 5px;
   background: rgba(255,255,255,0.3);
   z-index: 5;
@@ -812,10 +815,10 @@ a.invert:hover {
   padding-right: 140px;
 }
 
-.subscribe-form input[type=email] {
+.subscribe-form input[type="email"] {
 }
 
-.subscribe-form input[type=submit] {
+.subscribe-form input[type="submit"] {
   position: absolute;
   top: -1px;
   right: 0;
@@ -996,7 +999,8 @@ a.invert:hover {
 }
 
 .breadcrumbs {
-  margin-top: 23px;
+  margin-top: 17px;
+  margin-bottom: 11px;
   margin-left: 0;
   padding: 0;
   color: #fff;
@@ -1004,7 +1008,7 @@ a.invert:hover {
 
 .breadcrumbs li {
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 17px;
   vertical-align: top;
   font-size: 14px;
 }
@@ -1012,7 +1016,6 @@ a.invert:hover {
 .breadcrumbs a {
   position: relative;
   border-bottom: 1px solid #c2cec7;
-  ;
   line-height: 18px;
   text-decoration: none;
 }
@@ -1025,7 +1028,7 @@ a.invert:hover {
   content: "»";
   position: absolute;
   top: 0;
-  right: -18px;
+  right: -15px;
 }
 
 .breadcrumbs a:hover:after {
@@ -1033,7 +1036,7 @@ a.invert:hover {
 }
 
 .filter {
-  margin-bottom: 25px;
+  margin-bottom: 27px;
   display: inline-block;
   vertical-align: middle;
   color: #fff;
@@ -1048,7 +1051,7 @@ a.invert:hover {
 
 .filter-items {
   display: block;
-  padding: 7px 16px;
+  padding: 7px 3px 7px 16px;
   color: #fff;
   background: rgba(255,255,255,0.2);
   border-radius: 25px;
@@ -1062,7 +1065,7 @@ a.invert:hover {
 .filter-items-select select {
   display: block;
   border-radius: 25px;
-  padding: 8px 32px 9px 14px;
+  padding: 8px 34px 9px 14px;
   font-family: "roboto", "Arial", sans-serif;
   font-size: 16px;
   color: #fff;
@@ -1097,8 +1100,8 @@ select:focus {
 .filter-items-select:before {
   content: '';
   position: absolute;
-  top: 15px;
-  right: 12px;
+  top: 16px;
+  right: 14px;
   width: 9px;
   height: 5px;
   background: url(../img/sprite.png) no-repeat -10px -1175px;
@@ -1114,6 +1117,10 @@ select:focus {
 
 .label-radio, .label-checkbox {
   margin-right: 15px;
+  display: inline-block;
+}
+.label-checkbox {
+  margin-right: 20px;
   display: inline-block;
 }
 
@@ -1196,7 +1203,7 @@ input[disabled] + .radio-indicator:hover, input[disabled] + .checkbox-indicator:
   padding-top: 16px;
   padding-left: 15px;
   padding-right: 15px;
-  width: 190px;
+  width: 188px;
 }
 
 .range-scale {
@@ -1233,15 +1240,15 @@ input[disabled] + .radio-indicator:hover, input[disabled] + .checkbox-indicator:
 .filter-block {
   display: inline-block;
   vertical-align: top;
-  margin-right: 15px;
-  margin-bottom: 15px;
+  margin-right: 12px;
+  margin-bottom: 13px;
 }
 
 .filter-btn {
   font-family: "roboto","Arial",Sans-serif;
   background: #9cb0a4;
   margin-top: 25px;
-  padding: 8px 28px;
+  padding: 9px 28px;
   border: none;
   border-radius: 50px;
   color: #fff;
@@ -1266,11 +1273,11 @@ input[disabled] + .radio-indicator:hover, input[disabled] + .checkbox-indicator:
 
 .paginator {
   float: right;
-  margin-bottom: 30px;
-  ;
+  margin-top: 43px;
+  margin-bottom: 16px;
   min-width: 20px;
   height: 40px;
-  padding: 0 10px;
+  padding: 0;
 }
 
 .paginator a {
@@ -1289,8 +1296,9 @@ input[disabled] + .radio-indicator:hover, input[disabled] + .checkbox-indicator:
 }
 
 .paginator .next {
+  margin-right: -9px;
   text-indent: -1000em;
-  margin-left: 10px;
+  margin-left: 5px;
   background-image: url(../img/next_icon.png);
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -1298,7 +1306,7 @@ input[disabled] + .radio-indicator:hover, input[disabled] + .checkbox-indicator:
 
 .paginator .prev {
   text-indent: -1000em;
-  margin-right: 10px;
+  margin-right: 4px;
   background-image: url(../img/prev_icon.png);
   background-repeat: no-repeat;
   background-position: 50% 50%;
